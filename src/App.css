@@ -36,3 +36,79 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  background-color: #F5F7F9;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  
+}
+.button {
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0px 10px;
+  cursor: pointer;
+  background-color: #F5F7F9;
+}
+.imageTabDiv{
+ 
+  display: inline-flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+  flex: 1
+
+}
+.imageTab {
+  position: "absolute";
+  width: 100%;
+}
+.buttonImg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.LogoImg{
+ width: 5em;
+ height: 4em;
+ padding-top: 0.5em;
+ padding-bottom: 0.5em;
+}
+.html { 
+  background: url(/src/Icon/bg-menu.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.inputSearch{
+  width: 60%;
+  padding: 7px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+ 
+  box-sizing: border-box;
+  outline: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.buttonS{
+  
+  width: 5%;
+  padding: 14.5px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
