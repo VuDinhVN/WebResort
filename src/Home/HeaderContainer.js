@@ -1,47 +1,90 @@
-import React, { useRef, useState, useEffect } from 'react';
-import '../App.css';
-import { HiMail } from 'react-icons/hi';
-import { HiOutlinePhone } from 'react-icons/hi';
-import { MdLanguage } from 'react-icons/md';
-const HeaderContainer = () => {
-	return (
-		<div
-			style={{
-				backgroundColor: '#006622',
-				width: '100%',
-				flexDirection: 'row',
-				display: 'flex',
-				justifyContent: 'space-between',
-				// paddingBottom: 5,
-				// paddingTop: 5,
-				flex: 1
-			}}
-		>
-			<div style={{ flexDirection: 'row', display: 'flex', flex: 2, justifyContent: 'space-around' }}>
-				<div style={{ color: 'white', display: 'flex', alignItems: 'center' }}>
-					<HiOutlinePhone style={{ width: 25, height: 17, color: 'white' }} />
-					<div style={{}}>(+84) 968284223</div>
-				</div>
-				<div style={{ color: 'white', display: 'flex', alignItems: 'center' }}>
-					<HiMail style={{ width: 30, height: 20, color: 'white' }} />
-					<div style={{}}>vudinh.job@gmail.com</div>
-				</div>
-			</div>
-			<div
-				style={{
-					flex: 3,
-					justifyContent: 'flex-end',
-					display: 'flex',
-					color: 'white',
-					marginRight: 10,
-					alignItems: 'center',
-                  
-				}}
-			>
-				<MdLanguage style={{ width: 25, height: 20, color: 'white' }} />
-				<div style={{ fontSize: 15 }}>VN</div>
-			</div>
-		</div>
-	);
-};
-export default HeaderContainer;
+import * as React from "react";
+
+export default function BackToTop() {
+  return (
+    <div
+      style={{
+        background: "grey",
+        overflow: "hidden",
+        width: "100%",
+        flex: "1",
+        display: "flex",
+        flexDirection: "column",
+        float: "left",
+        position: "absolute",
+        left: "0",
+        top: "0"
+      }}
+    >
+      <div
+        style={{
+          width: "100%",
+          overflow: "hidden",
+          display: "flex",
+          background: "white",
+          flexDirection: "row",
+          position: "fixed",
+          flex: "1",
+        }}
+      >
+        <img
+          src="https://artgraphicstock.com/wp-content/uploads/2021/12/lo-go-la-gi.png"
+          alt="Italian Trulli"
+          style={{ width: "50", height: "50" }}
+        ></img>
+        <div
+          style={{
+            flex: "1",
+            display: "flex",
+            justifyContent: "space-between"
+          }}
+        >
+          <button style={{ border: "none" }}>ok</button>
+        </div>
+      </div>
+      <div
+        style={{
+          background: "white",
+          display: "flex",
+          flexDirection: "column",
+       
+          
+        }}
+      >
+        <span style={{ width: "100%", wordWrap: "break-word" }}>
+          1111111111111111111111111111111111111111111111111111qqqq
+        </span>
+        <span style={{ width: "100%", wordWrap: "break-word" }}>
+          a1111111111111111111111111111111111111111111111111111111111111111111
+        </span>
+      </div>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p> <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+      <p>1</p>
+    </div>
+  );
+}
