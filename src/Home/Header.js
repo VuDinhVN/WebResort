@@ -4,7 +4,7 @@ import Logo from '../Icon/logo.png'
 import tab from '../Icon/bg-menu.png'
 const Header = () => {
   return (
-    <div style={{ display: 'flex', flex: 1, position: 'fixed', width: '100%', backgroundColor: 'white', }} className="header">
+    <div style={{ display: 'flex', flex: 1, position: 'fixed', width: '100%', backgroundColor: 'white', top: 0, zIndex: 99 }} className="header">
       <div style={{ flex: 2, display: 'flex', justifyContent: 'center' }}>
         <img src={Logo} alt="" className="LogoImg" />
       </div>
