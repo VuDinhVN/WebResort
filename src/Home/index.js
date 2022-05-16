@@ -1,32 +1,28 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, {useEffect} from 'react';
+import 'react-slideshow-image/dist/styles.css';
 import '../App.css';
-import SimpleImageSlider from 'react-simple-image-slider';
-import VietNam from './Component/VietNam/index';
-import Introduce from './Component/Introduce/index'
-
-import tab from '../Icon/bg-menu.png'
-
-import { Slide } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
-
-
 import AppContainer from '../AppContainer/AppContainer';
-import AppFooter from '../AppFooter/AppFooter'
-import InfoResort from './InfoResort/InfoResort'
-import Spa from './Spa/Spa'
-import Restaurant from './Restaurant/Restaurant'
-import Activities from './Activities/Activities'
-
-import Header from './Header';
+import AppFooter from '../AppFooter/AppFooter';
+import a1 from '../Icon/a1.png';
+import a2 from '../Icon/a2.png';
+import a3 from '../Icon/a3.png';
+import a4 from '../Icon/a4.png';
+import a5 from '../Icon/a5.png';
+import Activities from './Activities/Activities';
 import Header2 from './Component/Header';
+import VietNam from './Component/VietNam/index';
+import Header from './Header';
+import InfoResort from './InfoResort/InfoResort';
+import Restaurant from './Restaurant/Restaurant';
+import SlidesHome from './SilesHome/SilesHome';
+import Spa from './Spa/Spa';
 
-import SlidesHome from './SilesHome/SilesHome'
 
-import a1 from '../Icon/a1.png'
-import a2 from '../Icon/a2.png'
-import a3 from '../Icon/a3.png'
-import a4 from '../Icon/a4.png'
-import a5 from '../Icon/a5.png'
+
+
+
+
+
 
 const collection = [
 	{ src: a1, caption: "Caption one" },
@@ -39,16 +35,22 @@ const collection = [
 const phone = 'Điện thoại: '
 
 const Home = (props) => {
+	useEffect(()=>{
+		document.title = 'Mekong Resort'
+	},[])
 	return (
-		<AppContainer>
+		<AppContainer>∏
 			<Header></Header>
 			<Header2></Header2>
+			<div style={{display: 'flex', width: '100%', height: '10%'}}>
 			<SlidesHome
           input={collection}
           ratio={`3:2`}
           mode={`automatic`}
           timeout={`3000`}
         />
+			</div>
+			
 			<div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
 				<span style={{ fontSize: 20, fontWeight: 'bold' }}>
 					Mekong Riverside Resort & Spa
