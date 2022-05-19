@@ -16,7 +16,7 @@ const images = [
 
 const RoomThree = () => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
             <span style={{ marginTop: 10, marginBottom: 10, fontSize: 20, fontWeight: 'bold', width: '92%' }}>Double Riverview Bungalow</span>
             <div style={{ display: 'flex', width: '92%', marginBottom: 20, marginTop: 10, }}>
 

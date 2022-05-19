@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import moment from 'moment';
+import '../../App.css';
 import { useNavigate } from 'react-router-dom';
 
 const Order = ({type}) => {
@@ -103,7 +104,8 @@ const Order = ({type}) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-        }}>
+            
+        }} className="shadow">
             <div style={{ display: 'flex', paddingTop: 10, paddingBottom: 10 }}>
                 <span style={{ fontSize: 20, fontWeight: 'bold', color: 'white' }}>Book your stay</span>
             </div>

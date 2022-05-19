@@ -33,7 +33,7 @@ const Home = (props) => {
 					width={'100%'}
 					height={300}
 					images={images}
-					// showBullets={true}
+					showBullets={true}
 					showNavs={true}
 					navSize={20}
 					slideDuration={1}

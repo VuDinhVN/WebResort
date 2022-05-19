@@ -38,6 +38,42 @@ const photos = [
     }
 ];
 
+const cake = [
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__bakery_mrr_002.jpg?width=0&height=0',
+        width: 4,
+        height: 3
+    },
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__bakery_mrr_003.jpg?width=0&height=0',
+        width: 1,
+        height: 1
+    },
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__bakery_mrr_004.jpg?width=0&height=0',
+        width: 1,
+        height: 1
+    },
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__bakery_mrr_005.jpg?width=0&height=0',
+        width: 1,
+        height: 1
+    }
+];
+
+const cook =  [
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__cookeryclass200.jpg?width=0&height=0&mode=crop',
+        width: 4,
+        height: 3
+    },
+    {
+        src: 'https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__cookeryclass200.2.jpg?width=0&height=0&mode=crop',
+        width: 1,
+        height: 1
+    }
+]
+
 const Restaurants = (props) => {
 
     return (
@@ -65,6 +101,43 @@ const Restaurants = (props) => {
                     </div>
                     <div style={{ flex: 1 }}>
                         <Gallery photos={photos} />
+                    </div>
+                </div>
+           </div>
+           <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                <div style={{ width: '93%', flexDirection: 'row', display: 'flex', marginBottom: 20, marginTop: 10}}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, marginLeft: '6%' }}>
+                        <span style={{ fontSize: 24, fontWeight: 'bold', color: '#2d6331', marginBottom: 20 }}>Bakery</span>
+                        <span>Our Pastry Chef, Vu Dinh, studied at the French Bakery School in Hue Vietnam. His talent and practiced skill is only exceeded by his passion for learning something new. Previously, he’s worked as the Demi Chef for The Sofitel Plaza in Hanoi and at La Residence Resort in Hue. With a portfolio containing hundreds of different baked goods, if you’re looking for something specific feel free to send us an email and we’re positive he can learn, or already knows how, to make it for your arrival.</span>
+                        <span style={{ marginBottom: 10, marginTop: 10}}>You may request to be served at garden outside your bungalows. We can also arrange a romantic candle-lit dinner for you and your loved one only. Great food, excellent wine and cocktail, superb views and pristine natural settings, we have everything you need for fabulous dining experience.</span>
+                        <span>- Tiramisu Cheesecake</span>
+                        <span>- Prosecco Sabayon</span>
+                        <span>- Mango Mousse Cake
+(we grow the mangos in the garden)</span>
+<span>Banana Cake
+(we grow the bananas in the garden)</span>
+
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <Gallery photos={cake} />
+                    </div>
+                </div>
+           </div>
+
+           <div style={{backgroundColor: '#F9F9F9', width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                <div style={{ width: '93%', flexDirection: 'row', display: 'flex', marginBottom: 20, marginTop: 10}}>
+                    <div style={{ display: 'flex', flexDirection: 'column', flex: 1, marginLeft: '6%' }}>
+                        <span style={{ fontSize: 24, fontWeight: 'bold', color: '#2d6331', marginBottom: 20 }}>Cooking Class</span>
+                        <span>Our Cooking Class is a great opportunity to learn some traditional Vietnamese dishes. We utilize all the fresh ingredients from our garden. You have the option to go and pick them yourself!</span>
+                        <span>Pork and Prawn Spring Rolls – dice the ingredients, mix them together, and roll your own!</span>
+                        <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331', marginTop: 20 }}> Cooking Class Menu</span>
+                        <span>- Pork and Prawn Spring Rolls – dice the ingredients, mix them together, and roll your own!</span>
+                        <span>- Coconut Basil Chicken cooked with Rice Wine – It starts with roasting garlic on a pan, and finishes by simmering in a clay pot.</span>
+<span>- Mekong Style Rice – Throw in the ingredients, mix together and wrap it in a Lotus Leaf so it stays sticky sweet.</span>
+
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <Gallery photos={cook} />
                     </div>
                 </div>
            </div>

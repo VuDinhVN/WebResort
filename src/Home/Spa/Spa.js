@@ -1,14 +1,15 @@
 import React, { useRef, useState, useEffect } from 'react';
 import spa1 from '../../Icon/spa1.jpg'
 import r3 from '../../Icon/r3.jpg'
+import '../../App.css';
 
 const Spa = () => {
     return (
         <div style={{ display: 'flex', width: '100%', flexDirection: 'column'}}>
             <div style={{ display: 'flex', width: '100%', height: '100%', flexDirection: 'column', backgroundColor: '#F9F9F9', paddingTop: 30, paddingBottom: 30, }}>
-                <div style={{ display: 'flex', flexDirection: 'row', paddingLeft: '10%', paddingRight: '10%' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', paddingLeft: '10%', paddingRight: '10%' }} >
 
-                    <img src={spa1} style={{ width: 500, height: 500, overflow: 'hidden', borderRadius: 300, }}></img>
+                    <img src={spa1} style={{ width: 500, height: 500, overflow: 'hidden', borderRadius: 300, }} className="shadow"></img>
 
                     <div style={{ paddingLeft: 50, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                         <div style={{ display: 'flex', flex: 1, flexDirection: 'column' }}>

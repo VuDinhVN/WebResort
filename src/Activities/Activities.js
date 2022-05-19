@@ -13,7 +13,7 @@ const Activities = (props) => {
         <AppContainer>
             <Header />
             <div style={{ position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
-                <img src={res} style={{ height: 300, width: '100%' }}></img>
+                <img src='https://myguestdiary-cdn-uploads.azureedge.net/uploads/1079/__page__110347987_1965548800253752_4120832034334431246_o.jpg?width=1920&height=670&mode=crop' style={{ height: 300, width: '100%' }}></img>
                 <div style={{ position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
                     <Order type={1} />
                 </div>
