@@ -16,11 +16,11 @@ const images = [
 
 const RoomThree = () => {
     return (
-        <div style={{fontFamily: 'AssistantRegular', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <span style={{fontFamily: 'AssistantRegular', marginTop: 10, marginBottom: 10, fontSize: 20, fontWeight: 'bold', width: '92%' }}>Double Riverview Bungalow</span>
-            <div style={{fontFamily: 'AssistantRegular', display: 'flex', width: '92%', marginBottom: 20, marginTop: 10, }}>
+        <div style={{  display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+            <span className = "font"  style={{  marginTop: 10, marginBottom: 10, fontSize: 20, fontWeight: 'bold', width: '92%' }}>Double Riverview Bungalow</span>
+            <div style={{  display: 'flex', width: '92%', marginBottom: 20, marginTop: 10, }}>
 
-                <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', flex: 3.5 }}>
+                <div style={{  display: 'flex', flexDirection: 'column', flex: 3.5 }}>
 
                     <SimpleImageSlider
                         width={'60%'}
@@ -34,85 +34,85 @@ const RoomThree = () => {
                     />
 
                 </div>
-                <div style={{fontFamily: 'AssistantRegular', position: 'sticky', borderRadius: 5, border: '1px solid rgba(53,51,49,0.1)', display: 'flex', flexDirection: 'column', flex: 1.5, paddingTop: 10, paddingLeft: 20, justifyContent: 'space-around', }}
+                <div style={{  position: 'sticky', borderRadius: 5, border: '1px solid rgba(53,51,49,0.1)', display: 'flex', flexDirection: 'column', flex: 1.5, paddingTop: 10, paddingLeft: 20, justifyContent: 'space-around', }}
                     className="shadow"
                 >
-                    <div style={{fontFamily: 'AssistantRegular', flexDirection: 'column', width: '100%' }}>
-                        <span style={{fontSize: 20, fontFamily: 'AssistantRegular', fontWeight: 'bold', color: '#2d6331'}}>Contact</span>
-                        <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'rgba(53,51,49,0.3)', }}></div>
+                    <div style={{  flexDirection: 'column', width: '100%' }}>
+                        <span className = "font"  style={{fontSize: 20,   fontWeight: 'bold', color: '#2d6331'}}>Contact</span>
+                        <div style={{  width: '100%', height: 1, backgroundColor: 'rgba(53,51,49,0.3)', }}></div>
                     </div>
 
-                    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', width: '100%' }}>
-                        <span style={{fontSize: 18, fontFamily: 'AssistantRegular', fontWeight: '500', color: '#2d6331'}}>Address</span>
-                        <span style={{fontFamily: 'AssistantRegular'}}>Mekong Riverside Boutique Resort & Spa,
+                    <div style={{  display: 'flex', flexDirection: 'column', width: '100%' }}>
+                        <span className = "font"  style={{fontSize: 18,   fontWeight: '500', color: '#2d6331'}}>Address</span>
+                        <span className = "font"  style={{  }}>Mekong Riverside Boutique Resort & Spa,
                         </span>
-                        <span style={{fontFamily: 'AssistantRegular'}}>
+                        <span className = "font"  style={{  }}>
                             Hoa Qui Ward,
                         </span >
-                        <span style={{fontFamily: 'AssistantRegular'}}>
+                        <span className = "font"  style={{  }}>
                             Hoa Khanh Subdistrict,
                         </span>
-                        <span style={{fontFamily: 'AssistantRegular'}}>
+                        <span className = "font"  style={{  }}>
                             Cai Be District,
                         </span>
-                        <span style={{fontFamily: 'AssistantRegular'}}>
+                        <span className = "font"  style={{  }}>
                             Tien Giang Province,
                         </span>
-                        <span style={{fontFamily: 'AssistantRegular'}}>
+                        <span className = "font"  style={{  }}>
 
 
 
                             Vietnam</span>
                     </div>
-                    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', width: '100%' }}>
-                        <span style={{fontFamily: 'AssistantRegular'}}>Phone</span>
-                        <a style={{fontFamily: 'AssistantRegular', color: '#2d6331', fontStyle: 'italic',  }} href="tel:+84336132135">Phone: +84 336 132 135</a>
+                    <div style={{  display: 'flex', flexDirection: 'column', width: '100%' }}>
+                        <span className = "font"  style={{  }}>Phone</span>
+                       <a className = "font"  style={{  color: '#2d6331', fontStyle: 'italic',  }} href="tel:+84336132135">Phone: +84 336 132 135</a>
                     </div>
-                    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', width: '100%' }}>
-                    <span style={{fontFamily: 'AssistantRegular'}}>E-mail:</span>
-                        <a style={{fontFamily: 'AssistantRegular', color: '#2d6331', fontStyle: 'italic' }} href="lichvutravel@yahoo.com">lichvutravel@yahoo.com</a>
+                    <div style={{  display: 'flex', flexDirection: 'column', width: '100%' }}>
+                    <span className = "font"  style={{  }}>E-mail:</span>
+                       <a className = "font"  style={{  color: '#2d6331', fontStyle: 'italic' }} href="lichvutravel@yahoo.com">lichvutravel@yahoo.com</a>
                     </div>
-                    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', width: '100%' }}>
-                    <span style={{fontFamily: 'AssistantRegular'}}>Sales:</span>
-                        <a style={{fontFamily: 'AssistantRegular', color: '#2d6331', fontStyle: 'italic' }} href="info@dulichdongduong.com">info@dulichdongduong.com</a>
+                    <div style={{  display: 'flex', flexDirection: 'column', width: '100%' }}>
+                    <span className = "font"  style={{  }}>Sales:</span>
+                       <a className = "font"  style={{  color: '#2d6331', fontStyle: 'italic' }} href="info@dulichdongduong.com">info@dulichdongduong.com</a>
                     </div>
                 </div>
             </div>
-            <div style={{fontFamily: 'AssistantRegular', width: '92%', flexDirection: 'column', alignItems: 'flex-start', display: 'flex', justifyContent: 'flex-start' }}>
-                <div style={{fontFamily: 'AssistantRegular', width: '65%', height: 1, backgroundColor: 'rgba(53,51,49,0.3)', marginTop: 20, marginBottom: 20, }}></div>
-                <div style={{fontFamily: 'AssistantRegular', width: '100%', display: 'flex', flexDirection: 'row', marginRight: '10%' }}>
-                    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'row', flex: 3 }}>
-                        <span style={{fontFamily: 'AssistantRegular', flex: 1, fontSize: 17, fontWeight: '500' }}>Description</span>
-                        <div style={{fontFamily: 'AssistantRegular', flex: 4, display: 'flex', flexDirection: 'column' }}>
-                            <span styles={{fontFamily: 'AssistantRegular'}}>-We are a boutique resort that consists of 50 DeluxeDoubleRiverviewBungalow/25 bungalows ( Each room 30m2) . Our bungalow style DeluxeDoubleRiverviewBungalow combined with the aesthetic beauty of our resort puts you into a Mekong Delta relaxing state of mind. -Maximum 2 adults and 01 child under the age of 12 years sharing bedding with parent in room (with Extra charge) -Note: Children: Under 3 Year Old free, from 03 to under 06 year old 5$, from 06 to under 12 year old 10$ Extra Bed: 20$ for room (max 01 extra bed )</span>
-                            <span style={{fontFamily: 'AssistantRegular', marginTop: 10, fontSize: 17, fontWeight: '500' }}>Facilities</span>
-                            <span styles={{fontFamily: 'AssistantRegular'}}>Our Deluxe Double Riverview Bungalow comes with the following features and facilities:</span>
-                            <div style={{fontFamily: 'AssistantRegular', display: 'flex', flex: 1, flexDirection: 'row', }}>
-                                <div style={{fontFamily: 'AssistantRegular', display: 'flex', flex: 1, flexDirection: 'column', marginLeft: 10 }}>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Ensuite Bathroom</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Tea/Coffee Facilities</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Safe</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- 24 Hour Reception</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Free Mineral Water</span>
+            <div style={{  width: '92%', flexDirection: 'column', alignItems: 'flex-start', display: 'flex', justifyContent: 'flex-start' }}>
+                <div style={{  width: '65%', height: 1, backgroundColor: 'rgba(53,51,49,0.3)', marginTop: 20, marginBottom: 20, }}></div>
+                <div style={{  width: '100%', display: 'flex', flexDirection: 'row', marginRight: '10%' }}>
+                    <div style={{  display: 'flex', flexDirection: 'row', flex: 3 }}>
+                        <span className = "font"  style={{  flex: 1, fontSize: 17, fontWeight: '500' }}>Description</span>
+                        <div style={{  flex: 4, display: 'flex', flexDirection: 'column' }}>
+                            <span className = "font"  styles={{  }}>-We are a boutique resort that consists of 50 DeluxeDoubleRiverviewBungalow/25 bungalows ( Each room 30m2) . Our bungalow style DeluxeDoubleRiverviewBungalow combined with the aesthetic beauty of our resort puts you into a Mekong Delta relaxing state of mind. -Maximum 2 adults and 01 child under the age of 12 years sharing bedding with parent in room (with Extra charge) -Note: Children: Under 3 Year Old free, from 03 to under 06 year old 5$, from 06 to under 12 year old 10$ Extra Bed: 20$ for room (max 01 extra bed )</span>
+                            <span className = "font"  style={{  marginTop: 10, fontSize: 17, fontWeight: '500' }}>Facilities</span>
+                            <span className = "font"  styles={{  }}>Our Deluxe Double Riverview Bungalow comes with the following features and facilities:</span>
+                            <div style={{  display: 'flex', flex: 1, flexDirection: 'row', }}>
+                                <div style={{  display: 'flex', flex: 1, flexDirection: 'column', marginLeft: 10 }}>
+                                    <span className = "font"  styles={{  }}>- Ensuite Bathroom</span>
+                                    <span className = "font"  styles={{  }}>- Tea/Coffee Facilities</span>
+                                    <span className = "font"  styles={{  }}>- Safe</span>
+                                    <span className = "font"  styles={{  }}>- 24 Hour Reception</span>
+                                    <span className = "font"  styles={{  }}>- Free Mineral Water</span>
                                 </div>
-                                <div style={{fontFamily: 'AssistantRegular', display: 'flex', flex: 1, flexDirection: 'column', paddingBottom: 20 }}>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- TV</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Fridges</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Hairdryer</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Free toiletriess</span>
-                                    <span styles={{fontFamily: 'AssistantRegular'}}>- Free Wifi</span>
+                                <div style={{  display: 'flex', flex: 1, flexDirection: 'column', paddingBottom: 20 }}>
+                                    <span className = "font"  styles={{  }}>- TV</span>
+                                    <span className = "font"  styles={{  }}>- Fridges</span>
+                                    <span className = "font"  styles={{  }}>- Hairdryer</span>
+                                    <span className = "font"  styles={{  }}>- Free toiletriess</span>
+                                    <span className = "font"  styles={{  }}>- Free Wifi</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div style={{fontFamily: 'AssistantRegular', flex: 1.5, width: '100%', height: '100%', paddingTop: 10, paddingLeft: 20, justifyContent: 'space-around', marginLeft: '9%', marginBottom: 10, }}>
-                        <div style={{fontFamily: 'AssistantRegular', position: 'sticky', borderRadius: 5, border: '1px solid rgba(53,51,49,0.1)', display: 'flex', flexDirection: 'column', height: '60%', }}
+                    <div style={{  flex: 1.5, width: '100%', height: '100%', paddingTop: 10, paddingLeft: 20, justifyContent: 'space-around', marginLeft: '9%', marginBottom: 10, }}>
+                        <div style={{  position: 'sticky', borderRadius: 5, border: '1px solid rgba(53,51,49,0.1)', display: 'flex', flexDirection: 'column', height: '60%', }}
                             className="shadow"
                         >
-                            <div style={{fontFamily: 'AssistantRegular', width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                                <img src={phoneCall} style={{fontFamily: 'AssistantRegular', width: 100, height: 100, marginTop: 10 }}></img>
-                                <span style={{fontFamily: 'AssistantRegular', fontSize: 30, fontWeight: 'bold', }}>Call Us</span>
-                                <a style={{fontFamily: 'AssistantRegular', color: '#2d6331', fontStyle: 'italic', fontSize: 24, fontWeight: 'bold', marginBottom: 10 }} href="tel:+84336132135">Phone: +84 336 132 135</a>
+                            <div style={{  width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                                <img src={phoneCall} style={{  width: 100, height: 100, marginTop: 10 }}></img>
+                                <span className = "font"  style={{  fontSize: 30, fontWeight: 'bold', }}>Call Us</span>
+                               <a className = "font"  style={{  color: '#2d6331', fontStyle: 'italic', fontSize: 24, fontWeight: 'bold', marginBottom: 10 }} href="tel:+84336132135">Phone: +84 336 132 135</a>
 
                             </div>
                         </div>
@@ -120,7 +120,7 @@ const RoomThree = () => {
                 </div>
 
             </div>
-            <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 0.5, backgroundColor: 'rgba(53,51,49,0.3)', marginTop: 20 }}>
+            <div style={{  width: '100%', height: 0.5, backgroundColor: 'rgba(53,51,49,0.3)', marginTop: 20 }}>
 
             </div>
         </div>

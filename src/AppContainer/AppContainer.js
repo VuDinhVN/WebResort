@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
-
+import '../App.css';
 const AppContainer = (props) =>{
     return(
-        <div  style={{fontFamily: 'AssistantRegular',
+        <div  style={{ 
        
         overflow: "hidden",
         width: "100%",

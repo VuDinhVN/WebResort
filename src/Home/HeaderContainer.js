@@ -1,9 +1,9 @@
 import * as React from "react";
-
+import '../App.css';
 export default function BackToTop() {
   return (
     <div
-      style={{fontFamily: 'AssistantRegular',
+      style={{ 
         background: "grey",
         overflow: "hidden",
         width: "100%",
@@ -17,7 +17,7 @@ export default function BackToTop() {
       }}
     >
       <div
-        style={{fontFamily: 'AssistantRegular',
+        style={{ 
           width: "100%",
           overflow: "hidden",
           display: "flex",
@@ -30,20 +30,20 @@ export default function BackToTop() {
         <img
           src="https://artgraphicstock.com/wp-content/uploads/2021/12/lo-go-la-gi.png"
           alt="Italian Trulli"
-          style={{fontFamily: 'AssistantRegular', width: "50", height: "50" }}
+          style={{  width: "50", height: "50" }}
         ></img>
         <div
-          style={{fontFamily: 'AssistantRegular',
+          style={{ 
             flex: "1",
             display: "flex",
             justifyContent: "space-between"
           }}
         >
-          <button style={{fontFamily: 'AssistantRegular', border: "none" }}>ok</button>
+          <button style={{  border: "none" }}>ok</button>
         </div>
       </div>
       <div
-        style={{fontFamily: 'AssistantRegular',
+        style={{ 
           background: "white",
           display: "flex",
           flexDirection: "column",
@@ -51,10 +51,10 @@ export default function BackToTop() {
           
         }}
       >
-        <span style={{fontFamily: 'AssistantRegular', width: "100%", wordWrap: "break-word" }}>
+        <span className = "font"  style={{  width: "100%", wordWrap: "break-word" }}>
           1111111111111111111111111111111111111111111111111111qqqq
         </span>
-        <span style={{fontFamily: 'AssistantRegular', width: "100%", wordWrap: "break-word" }}>
+        <span className = "font"  style={{  width: "100%", wordWrap: "break-word" }}>
           a1111111111111111111111111111111111111111111111111111111111111111111
         </span>
       </div>

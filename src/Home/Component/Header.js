@@ -5,10 +5,10 @@ const Header = () => {
 	return (
 		// <div className="header">
             
-    //          <div style={{fontFamily: 'AssistantRegular',flex: 1, alignItems:'center', display: 'flex', justifyContent: 'center'}}>
+    //          <div style={{ flex: 1, alignItems:'center', display: 'flex', justifyContent: 'center'}}>
     //          <img src={Logo}  alt="" className="LogoImg"/>
             //  </div>
-            //   <div style={{fontFamily: 'AssistantRegular',flex: 6, alignItems:'center', display: 'flex', justifyContent:'space-between'}}>
+            //   <div style={{ flex: 6, alignItems:'center', display: 'flex', justifyContent:'space-between'}}>
             //   <button type="button" className="button">HOME</button>
             //   <button type="button" className="button" >ROOMS</button>
             //   <button type="button" className="button">TOUR</button>
@@ -20,12 +20,12 @@ const Header = () => {
             //   </div>
            
 		// </div>
-    <div style={{fontFamily: 'AssistantRegular',display: 'flex' ,flex: 1, width: '100%', backgroundColor: 'white', }}>
-       <div style={{fontFamily: 'AssistantRegular',flex: 2, display: 'flex', justifyContent: 'center'}}>
+    <div style={{ display: 'flex' ,flex: 1, width: '100%', backgroundColor: 'white', }}>
+       <div style={{ flex: 2, display: 'flex', justifyContent: 'center'}}>
           <img src={Logo}  alt="" className="LogoImg"/>
       </div>
        
-            <div style={{fontFamily: 'AssistantRegular', flex: 8, alignItems:'center', display: 'flex', justifyContent:'space-between'}}>
+            <div style={{  flex: 8, alignItems:'center', display: 'flex', justifyContent:'space-between'}}>
               <button type="button" className="button">HOME</button>
               <button type="button" className="button" >ROOMS</button>
               <button type="button" className="button">TOUR</button>

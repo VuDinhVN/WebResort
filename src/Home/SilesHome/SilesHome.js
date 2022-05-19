@@ -101,10 +101,10 @@ export default class SlidesHome extends React.Component {
             );
           })}
 
-          <span className="prev" onClick={this.backward}>
+          <span className = "font"  className="prev" onClick={this.backward}>
             ❮
           </span>
-          <span className="next" onClick={this.forward}>
+          <span className = "font"  className="next" onClick={this.forward}>
             ❯
           </span>
         </div>
@@ -112,7 +112,7 @@ export default class SlidesHome extends React.Component {
         <div className="dot-container">
           {this.props.input.map((_, index) => {
             return (
-              <span
+              <span className = "font" 
                 key={index}
                 className={`dot ${
                   this.state.slideIndex === index ? "active" : ""

@@ -55,28 +55,30 @@ const Header = () => {
   }
 
   return (
-    <div style={{fontFamily: 'AssistantRegular', display: 'flex', flex: 1, position: 'fixed', width: '100%', height: 80, backgroundColor: 'white', top: 0, zIndex: 99 }} className="header">
-      <div style={{fontFamily: 'AssistantRegular', flex: 2, display: 'flex', justifyContent: 'center' }}>
-        <button onClick={goToHome} style={{fontFamily: 'AssistantRegular',border: 'none', backgroundColor: 'white', cursor: 'pointer'}}> <img src={Logo} alt="" className="LogoImg" /></button>
+    <div style={{  display: 'flex', flex: 1, position: 'fixed', width: '100%', height: 80, backgroundColor: 'white', top: 0, zIndex: 99 }} className="header">
+      <div style={{  flex: 2, display: 'flex', justifyContent: 'center' }}>
+        <button onClick={goToHome} style={{ border: 'none', backgroundColor: 'white', cursor: 'pointer'}}> <img src={Logo} alt="" className="LogoImg" /></button>
       </div>
-      <div style={{fontFamily: 'AssistantRegular', flex: 3, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}></div>
-      <div style={{fontFamily: 'AssistantRegular', flex: 5, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
-        
-        <button onClick={goToHome} style={{fontFamily: 'AssistantRegular',backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold'}} type="button" className="button">Home</button>
-        <div style={{fontFamily: 'AssistantRegular',flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{  flex: 3, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}></div>
+      <div style={{  flex: 4, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
+        <button onClick={goToHome} style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold'}} type="button" className="button">Home</button>
+        <div style={{ flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <Dropdown
             trigger={['click']}
             overlay={menu}
             animation="slide-up"
           >
-            <button style={{fontFamily: 'AssistantRegular', backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold', flexDirection: 'row', justifyContent: 'center' }} className="button">Rooms</button>
+            <button style={{  backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold', flexDirection: 'row', justifyContent: 'center' }} className="button">Rooms</button>
 
           </Dropdown>
-          <img src={incondowngreen} style ={{width: 12, height: 15, marginLeft: -15, tintColor: 'green', marginTop:1.5}}></img>
+          <img src={incondowngreen} style ={{width: 12, height: 15, marginLeft: -10, tintColor: 'green', marginTop:1.5}}></img>
         </div>
-        <button onClick={goToRestaurants} style={{fontFamily: 'AssistantRegular', backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Restaurant</button>
-        <button onClick={goToActivities} style={{fontFamily: 'AssistantRegular', backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Activities</button>
-        <button onClick={goToAboutUs} style={{fontFamily: 'AssistantRegular', backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">About Us</button>
+        <button onClick={goToRestaurants} style={{  backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Restaurant</button>
+        <button onClick={goToActivities} style={{  backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Activities</button>
+        <button onClick={goToAboutUs} style={{  backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">About Us</button>
+      </div>
+      <div style={{  flex: 1, alignItems: 'center', display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+        
       </div>
     </div>
   );
