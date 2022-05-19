@@ -28,7 +28,7 @@ const Home = (props) => {
 		<AppContainer>
 			<Header />
 
-			<div style={{ position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
+			<div style={{fontFamily: 'AssistantRegular', position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
 				<SimpleImageSlider
 					width={'100%'}
 					height={300}
@@ -39,16 +39,16 @@ const Home = (props) => {
 					slideDuration={1}
 					autoPlay={true}
 				/>
-				<div style={{ position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
+				<div style={{fontFamily: 'AssistantRegular', position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
 					<Order type={1} />
 				</div>
-				<div style={{ position: 'absolute', bottom: 0, left: 50, width: 500, height: 350, }}>
+				<div style={{fontFamily: 'AssistantRegular', position: 'absolute', bottom: 0, left: 50, width: 500, height: 350, }}>
 					<Order type={2} />
 				</div>
 			</div>
 
-			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20}}>
-				<span style={{display: 'flex', width: '80%', flexDirection: 'column', alignItems: 'center'}}>
+			<div style={{fontFamily: 'AssistantRegular',display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20}}>
+				<span style={{fontFamily: 'AssistantRegular',display: 'flex', width: '80%', flexDirection: 'column', alignItems: 'center'}}>
 					Nestled along the bank of Tien River, Mekong Lodge is a charming eco-resort where design, comfort and nature are blended seamlessly together. Our lodge features 26 private bungalows (12 with pools), meticulously built to embody the local style of rural “garden cottage” surrounded by flowers and fruit trees. Right at the heart of Mekong Delta, Mekong Lodge offers a chance to explore one of the most beautiful areas in the region, which is still left untouched by modernization and development. Here, you can live not as a tourist but as a local with daily life going on around: vibrant river, fantastic floating market and quaint villages. Here, pristine tropical sun and nature are waiting for you all year round. Welcome to Mekong Lodge and see the real Vietnam that others miss!
 				</span>
 			</div>

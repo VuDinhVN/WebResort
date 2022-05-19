@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const AppContainer = (props) =>{
     return(
-        <div  style={{
+        <div  style={{fontFamily: 'AssistantRegular',
        
         overflow: "hidden",
         width: "100%",

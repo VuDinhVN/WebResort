@@ -111,6 +111,9 @@ overflow: hidden;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
+.font{
+  font-family: AssistantRegular
+}
 .buttonS{
   
   width: 5%;

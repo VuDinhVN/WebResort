@@ -16,12 +16,12 @@ const DoubleRiverviewBungalow = (props) => {
     return (
         <AppContainer>
             <Header />
-            <div style={{ position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
-                <img src={r2} style={{ height: 300, width: '100%' }}></img>
-                <div style={{ position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
+            <div style={{fontFamily: 'AssistantRegular', position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
+                <img src={r2} style={{fontFamily: 'AssistantRegular', height: 300, width: '100%' }}></img>
+                <div style={{fontFamily: 'AssistantRegular', position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
                     <Order type={1} />
                 </div>
-                <div style={{ position: 'absolute', bottom: 0, left: 50, width: 500, height: 350, }}>
+                <div style={{fontFamily: 'AssistantRegular', position: 'absolute', bottom: 0, left: 50, width: 500, height: 350, }}>
                     <Order type={2} />
                 </div>
             </div>

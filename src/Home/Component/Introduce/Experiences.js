@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import Intro from '../../../Icon/bg2.jpg';
 const Experiences = () => {
 	return (
-		<div style={{textAlign: 'center', marginRight: '20%', marginLeft: '20%'}}>
+		<div style={{fontFamily: 'AssistantRegular',textAlign: 'center', marginRight: '20%', marginLeft: '20%'}}>
 			{/* <h3>Trải nghiệm phù hợp, Kết nối địa phương, Khoảnh khắc khó quên</h3> */}
 			{/* <p>
 				Indochina Travel là chuyên gia hàng đầu trong lĩnh vực du lịch được thiết kế riêng đến Đông Nam Á từ năm

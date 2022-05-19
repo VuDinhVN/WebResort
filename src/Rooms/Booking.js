@@ -281,22 +281,22 @@ const Booking = () => {
     return (
         <AppContainer>
             <Header/>
-            <div style={{ width: '100%', height: 300, marginTop: 80,}}>
-                <img src={r4} style={{width: '100%', height:300}}></img>
+            <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 300, marginTop: 80,}}>
+                <img src={r4} style={{fontFamily: 'AssistantRegular',width: '100%', height:300}}></img>
             </div>
-        <div style={{marginTop: 20, display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', width: '30 %', }}>
-                    <span style={{ fontSize: 30, fontWeight: 'bold', textAlign: 'center', color:'#2d6331'}}>RESERVATION</span>
-                <div style={{ width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10, }}></div>
+        <div style={{fontFamily: 'AssistantRegular',marginTop: 20, display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{fontFamily: 'AssistantRegular', display: 'flex', flexDirection: 'column', width: '30 %', }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 30, fontWeight: 'bold', textAlign: 'center', color:'#2d6331'}}>RESERVATION</span>
+                <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10, }}></div>
 
-                <span style={{ fontSize: 17, fontWeight: '500', color:'#2d6331' }}>Check In</span>
-                    <input  onChange={(e)=> onChange1(e)} value={dateB} min={moment(Date.now()).format('YYYY-MM-DD')} type="date" style={{ height: 35, marginBottom: 10, backgroundColor: 'rgba(53,51,49,0.3)', outline: 'none', border: 'none' }}></input>
+                <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color:'#2d6331' }}>Check In</span>
+                    <input  onChange={(e)=> onChange1(e)} value={dateB} min={moment(Date.now()).format('YYYY-MM-DD')} type="date" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 10, backgroundColor: 'rgba(53,51,49,0.3)', outline: 'none', border: 'none' }}></input>
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Check Out</span>
-                    <input  onChange={(e)=> onChange2(e)} value={dateB2} min={dateB2} type="date" style={{ height: 35, marginBottom: 10, backgroundColor: 'rgba(53,51,49,0.3)', outline: 'none', border: 'none' }}></input>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Check Out</span>
+                    <input  onChange={(e)=> onChange2(e)} value={dateB2} min={dateB2} type="date" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 10, backgroundColor: 'rgba(53,51,49,0.3)', outline: 'none', border: 'none' }}></input>
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Adult</span>
-                <select name="Adult" id="Adult" style={{ height: 35, marginBottom: 5 }} value={adult} onChange={e => setAdult(e.target.value)}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Adult</span>
+                <select name="Adult" id="Adult" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5 }} value={adult} onChange={e => setAdult(e.target.value)}>
                     <option value="0">Choose</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -310,8 +310,8 @@ const Booking = () => {
                     <option value="10">10</option>
                 </select>
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Children</span>
-                <select name="Children" id="Children" style={{ height: 35, marginBottom: 5}} value = {children} onChange={e => setCh(e.target.value)}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Children</span>
+                <select name="Children" id="Children" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5}} value = {children} onChange={e => setCh(e.target.value)}>
                     <option value="0">Choose</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -325,8 +325,8 @@ const Booking = () => {
                     <option value="10">10</option>
                 </select>
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Infant</span>
-                <select name="Infant" id="Infant" style={{ height: 35, marginBottom: 10 }} value={Infant}  onChange={e => setInfant(e.target.value)}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Infant</span>
+                <select name="Infant" id="Infant" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 10 }} value={Infant}  onChange={e => setInfant(e.target.value)}>
                     <option value="0">Choose</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -340,12 +340,12 @@ const Booking = () => {
                     <option value="10">10</option>
                 </select>
 
-                <span style={{ textAlign: 'center', fontStyle: 'italic', marginBottom: 10 }}>(Infant: 1-4 years and children: 5-11 years.)</span>
+                <span style={{fontFamily: 'AssistantRegular', textAlign: 'center', fontStyle: 'italic', marginBottom: 10 }}>(Infant: 1-4 years and children: 5-11 years.)</span>
 
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>How many DeluxeDoubleRiverviewBungalow do you need?</span>
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Superior</span>
-                <select name="Superior" id="Superior" style={{ height: 35, marginBottom: 5 }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>How many DeluxeDoubleRiverviewBungalow do you need?</span>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Superior</span>
+                <select name="Superior" id="Superior" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5 }}>
                     <option value="volvo">0</option>
                     <option value="saab">1</option>
                     <option value="opel">2</option>
@@ -360,8 +360,8 @@ const Booking = () => {
                 </select>
 
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Deluxe</span>
-                <select name="Deluxe" id="Deluxe" style={{ height: 35, marginBottom: 5 }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Deluxe</span>
+                <select name="Deluxe" id="Deluxe" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5 }}>
                     <option value="volvo">0</option>
                     <option value="saab">1</option>
                     <option value="opel">2</option>
@@ -375,8 +375,8 @@ const Booking = () => {
                     <option value="opel">10</option>
                 </select>
 
-                    <span style={{ fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Suite</span>
-                <select name="Suite" id="Suite" style={{ height: 35, marginBottom: 10 }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 17, fontWeight: '500', color: '#2d6331' }}>Suite</span>
+                <select name="Suite" id="Suite" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 10 }}>
                     <option value="volvo">0</option>
                     <option value="saab">1</option>
                     <option value="opel">2</option>
@@ -389,85 +389,85 @@ const Booking = () => {
                     <option value="saab">9</option>
                     <option value="opel">10</option>
                 </select>
-                <div style={{ width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10 }}></div>
+                <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10 }}></div>
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Do you need the transfer?</span>
-                <div style={{ marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Do you need the transfer?</span>
+                <div style={{fontFamily: 'AssistantRegular', marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
                     <div>
                             <input type="radio" id="html" name="fav_language" value="HTML"/>
-                        <span>I will arrange by myself or ask for advice</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>I will arrange by myself or ask for advice</span>
                     </div>
                         <div> <input type="radio" id="html" name="fav_language" value="HTML" />
-                        <span>Private Car</span></div>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Private Car</span></div>
                         <div> <input type="radio" id="html" name="fav_language" value="HTML" />
-                        <span>Shuttle Bus</span></div>
-                    <div style={{ width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Shuttle Bus</span></div>
+                    <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
                 </div>
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Activities</span>
-                <div style={{ marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Activities</span>
+                <div style={{fontFamily: 'AssistantRegular', marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Boating to the vibrant Cai Be floating market</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Boating to the vibrant Cai Be floating market</span>
                     </div>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Visiting local hosts and traditional handicraft families</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Visiting local hosts and traditional handicraft families</span>
                     </div>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Preparing a typical Vietnamese meal with cooking demonstrations</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Preparing a typical Vietnamese meal with cooking demonstrations</span>
                     </div>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Cycling around quaint peaceful villages</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Cycling around quaint peaceful villages</span>
                     </div>
                     <div><input type="checkbox"></input>
-                            <span>Picking and tasting plenty of tropical fruit</span></div>
+                            <span styles={{fontFamily: 'AssistantRegular'}}>Picking and tasting plenty of tropical fruit</span></div>
                 </div>
-                <div style={{ width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
+                <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Restaurant</span>
-                <div style={{ marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Restaurant</span>
+                <div style={{fontFamily: 'AssistantRegular', marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Breakfast</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Breakfast</span>
                     </div>
                     <div><input type="checkbox"></input>
-                        <span>Lunch</span></div>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Lunch</span></div>
                     <div> <input type="checkbox"></input>
-                        <span>Dinner</span></div>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Dinner</span></div>
                 </div>
-                <div style={{ width: '100%', height: 0.5, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
+                <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 0.5, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Massage</span>
-                <div style={{ marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Massage</span>
+                <div style={{fontFamily: 'AssistantRegular', marginLeft: 10, display: 'flex', flexDirection: 'column' }}>
                     <div>
                         <input type="checkbox"></input>
-                        <span>Massage Service</span>
+                        <span styles={{fontFamily: 'AssistantRegular'}}>Massage Service</span>
                     </div>
                 </div> 
-                 <div style={{ width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
+                 <div style={{fontFamily: 'AssistantRegular', width: '100%', height: 1, backgroundColor: 'grey', marginBottom: 10, marginTop: 10 }}></div>
 
-                    <span style={{ fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Guest Information *</span>
-                <select name="cars" id="cars" style={{ height: 35, marginBottom: 5, marginTop: 10 }}>
+                    <span style={{fontFamily: 'AssistantRegular', fontSize: 20, fontWeight: 'bold', color: '#2d6331' }}>Guest Information *</span>
+                <select name="cars" id="cars" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5, marginTop: 10 }}>
                     <option value="volvo">Mr</option>
                     <option value="volvo">Ms</option>
                     <option value="saab">Mrs</option>
                 </select>
-                <input type="text" placeholder="Full Name" style={{ height: 30, marginBottom: 5 }}></input>
-                <select name="location" id="location" style={{ height: 35, marginBottom: 5 }}>
+                <input type="text" placeholder="Full Name" style={{fontFamily: 'AssistantRegular', height: 30, marginBottom: 5 }}></input>
+                <select name="location" id="location" style={{fontFamily: 'AssistantRegular', height: 35, marginBottom: 5 }}>
                   {country.map(e =>{ return (<option value={e.code}>{e.name}</option>)})}
                    
                 </select>
-                <input type="email" placeholder="Email" style={{ height: 30, marginBottom: 5 }}></input>
-                <input type="tel" placeholder="Phone" style={{ height: 30, marginBottom: 5 }}></input>
+                <input type="email" placeholder="Email" style={{fontFamily: 'AssistantRegular', height: 30, marginBottom: 5 }}></input>
+                <input type="tel" placeholder="Phone" style={{fontFamily: 'AssistantRegular', height: 30, marginBottom: 5 }}></input>
                 <textarea cols="40" rows="5" placeholder="Other requests for room & food ? What will you do after Mekong Lodge stay?"></textarea>
 
-            <div style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: 10, marginTop: 10}}>
+            <div style={{fontFamily: 'AssistantRegular', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: 10, marginTop: 10}}>
 
-                        <div style={{ borderRadius: 5, display: 'flex', backgroundColor: '#2d6331', width: '70%', flexDirection: 'row', justifyContent: 'center', marginBottom: 20 }}>
-                            <button style={{ fontWeight: 'bold', border: 'none', background: 'none', cursor: 'pointer', padding: 10, color: 'white' }}>Send</button>
+                        <div style={{fontFamily: 'AssistantRegular', borderRadius: 5, display: 'flex', backgroundColor: '#2d6331', width: '70%', flexDirection: 'row', justifyContent: 'center', marginBottom: 20 }}>
+                            <button style={{fontFamily: 'AssistantRegular', fontWeight: 'bold', border: 'none', background: 'none', cursor: 'pointer', padding: 10, color: 'white' }}>Send</button>
                         </div>
             </div>
             </div>

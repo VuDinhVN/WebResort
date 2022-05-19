@@ -3,7 +3,7 @@ import * as React from "react";
 export default function BackToTop() {
   return (
     <div
-      style={{
+      style={{fontFamily: 'AssistantRegular',
         background: "grey",
         overflow: "hidden",
         width: "100%",
@@ -17,7 +17,7 @@ export default function BackToTop() {
       }}
     >
       <div
-        style={{
+        style={{fontFamily: 'AssistantRegular',
           width: "100%",
           overflow: "hidden",
           display: "flex",
@@ -30,20 +30,20 @@ export default function BackToTop() {
         <img
           src="https://artgraphicstock.com/wp-content/uploads/2021/12/lo-go-la-gi.png"
           alt="Italian Trulli"
-          style={{ width: "50", height: "50" }}
+          style={{fontFamily: 'AssistantRegular', width: "50", height: "50" }}
         ></img>
         <div
-          style={{
+          style={{fontFamily: 'AssistantRegular',
             flex: "1",
             display: "flex",
             justifyContent: "space-between"
           }}
         >
-          <button style={{ border: "none" }}>ok</button>
+          <button style={{fontFamily: 'AssistantRegular', border: "none" }}>ok</button>
         </div>
       </div>
       <div
-        style={{
+        style={{fontFamily: 'AssistantRegular',
           background: "white",
           display: "flex",
           flexDirection: "column",
@@ -51,10 +51,10 @@ export default function BackToTop() {
           
         }}
       >
-        <span style={{ width: "100%", wordWrap: "break-word" }}>
+        <span style={{fontFamily: 'AssistantRegular', width: "100%", wordWrap: "break-word" }}>
           1111111111111111111111111111111111111111111111111111qqqq
         </span>
-        <span style={{ width: "100%", wordWrap: "break-word" }}>
+        <span style={{fontFamily: 'AssistantRegular', width: "100%", wordWrap: "break-word" }}>
           a1111111111111111111111111111111111111111111111111111111111111111111
         </span>
       </div>
