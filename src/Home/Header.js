@@ -5,7 +5,7 @@ import Dropdown from 'rc-dropdown';
 import Menu, { Item as MenuItem, Divider } from 'rc-menu';
 import 'rc-dropdown/assets/index.css';
 import { useNavigate } from 'react-router-dom';
-import d from '../Icon/d.png'
+import  incondowngreen from '../Icon/incondowngreen.png'
 
 
 
@@ -59,7 +59,8 @@ const Header = () => {
       <div style={{ flex: 2, display: 'flex', justifyContent: 'center' }}>
         <button onClick={goToHome} style={{border: 'none', backgroundColor: 'white', cursor: 'pointer'}}> <img src={Logo} alt="" className="LogoImg" /></button>
       </div>
-      <div style={{ flex: 8, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
+      <div style={{ flex: 3, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}></div>
+      <div style={{ flex: 5, alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
         
         <button onClick={goToHome} style={{backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold'}} type="button" className="button">Trang Chủ</button>
         <div style={{flexDirection: 'row', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
@@ -67,14 +68,12 @@ const Header = () => {
             trigger={['click']}
             overlay={menu}
             animation="slide-up"
-          // onVisibleChange={onVisibleChange}
           >
             <button style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold', flexDirection: 'row', justifyContent: 'center' }} className="button">Rooms</button>
 
           </Dropdown>
-          <img src={d} style ={{width: 20, height: 20, marginLeft: -15, tintColor: 'green', marginTop:3}}></img>
+          <img src={incondowngreen} style ={{width: 12, height: 15, marginLeft: -15, tintColor: 'green', marginTop:1.5}}></img>
         </div>
-        {/* <button onClick={goToRooms} style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button" >Phòng</button> */}
         <button onClick={goToRestaurants} style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Nhà Hàng</button>
         <button onClick={goToActivities} style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Hoạt Động</button>
         <button onClick={goToAboutUs} style={{ backgroundColor: 'white', fontSize: 16, color: '#2d6331', fontWeight: 'bold' }} type="button" className="button">Về Chúng Tôi</button>
