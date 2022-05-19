@@ -45,6 +45,10 @@
   max-width: 100%;
   
 }
+.shadow {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2),
+  0 12px 24px 0 rgba(0, 0, 0, 0.19);
+}
 .header2 {
   background-color: #F5F7F9;
  
@@ -119,4 +123,7 @@ overflow: hidden;
   cursor: pointer;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }

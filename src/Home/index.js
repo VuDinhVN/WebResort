@@ -1,86 +1,65 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import '../App.css';
 import AppContainer from '../AppContainer/AppContainer';
+import Order from './Order/Order';
 import AppFooter from '../AppFooter/AppFooter';
-import a1 from '../Icon/a1.png';
-import a2 from '../Icon/a2.png';
-import a3 from '../Icon/a3.png';
-import a4 from '../Icon/a4.png';
-import a5 from '../Icon/a5.png';
 import Activities from './Activities/Activities';
-import Header2 from './Component/Header';
 import VietNam from './Component/VietNam/index';
 import Header from './Header';
 import InfoResort from './InfoResort/InfoResort';
 import Restaurant from './Restaurant/Restaurant';
-import SlidesHome from './SilesHome/SilesHome';
 import Spa from './Spa/Spa';
+import SimpleImageSlider from 'react-simple-image-slider';
+import ab from '../Icon/ab.jpg'
+import bk from '../Icon/bk.png'
 
-
-
-
-
-
-
-
-const collection = [
-	{ src: a1, caption: "Caption one" },
-	{ src: a2, caption: "Caption two" },
-	{ src: a3, caption: "Caption three" },
-	{ src: a4, caption: "Caption four" },
-	{ src: a5, caption: "Caption five" },
-  ];
-
-const phone = 'Điện thoại: '
+const images = [
+	{ url: ab },
+	{ url: bk },
+	{ url: 'https://indochinatravel.ca/wp-content/uploads/2021/07/banner.jpg' }
+];
 
 const Home = (props) => {
-	useEffect(()=>{
+	useEffect(() => {
 		document.title = 'Mekong Resort'
-	},[])
+	}, [])
 	return (
-		<AppContainer>∏
-			<Header></Header>
-			<Header2></Header2>
-			<div style={{display: 'flex', width: '100%', height: '10%'}}>
-			<SlidesHome
-          input={collection}
-          ratio={`3:2`}
-          mode={`automatic`}
-          timeout={`3000`}
-        />
+		<AppContainer>
+			<Header />
+
+			<div style={{ position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
+				<SimpleImageSlider
+					width={'100%'}
+					height={300}
+					images={images}
+					// showBullets={true}
+					showNavs={true}
+					navSize={20}
+					slideDuration={1}
+					autoPlay={true}
+				/>
+				<div style={{ position: 'absolute', bottom: 0, right: 50, width: 500, height: 300, }}>
+					<Order type={1} />
+				</div>
+				<div style={{ position: 'absolute', bottom: 0, left: 50, width: 500, height: 350, }}>
+					<Order type={2} />
+				</div>
 			</div>
-			
-			<div style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
-				<span style={{ fontSize: 20, fontWeight: 'bold' }}>
-					Mekong Riverside Resort & Spa
+
+			<div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20}}>
+				<span style={{display: 'flex', width: '80%', flexDirection: 'column', alignItems: 'center'}}>
+					Nestled along the bank of Tien River, Mekong Lodge is a charming eco-resort where design, comfort and nature are blended seamlessly together. Our lodge features 26 private bungalows (12 with pools), meticulously built to embody the local style of rural “garden cottage” surrounded by flowers and fruit trees. Right at the heart of Mekong Delta, Mekong Lodge offers a chance to explore one of the most beautiful areas in the region, which is still left untouched by modernization and development. Here, you can live not as a tourist but as a local with daily life going on around: vibrant river, fantastic floating market and quaint villages. Here, pristine tropical sun and nature are waiting for you all year round. Welcome to Mekong Lodge and see the real Vietnam that others miss!
 				</span>
-			
-					<div style={{ display: 'flex', flexDirection: 'row', marginRight: 10 }}>
-						<span>
-							{phone}
-						</span>
-					<span style={{ marginLeft: 5, color: 'green', fontStyle: 'italic',}}>
-							0968284223
-						</span>
-					</div>
-					<div style={{ display: 'flex', flexDirection: 'row', marginLeft: 10 }}>
-						<span>
-							Email:
-						</span>
-					<span style={{ marginLeft: 5, color: 'green', fontStyle: 'italic', }}>
-							vudinh.job@gmail.com
-						</span>
-					</div>
-			
 			</div>
+
 			<InfoResort />
 
 			<VietNam />
 			<Spa />
-			<Restaurant/>
-			<Activities/>
-			<AppFooter/>
+			<Restaurant />
+			<Activities />
+			<AppFooter />
 		</AppContainer>
 	)
 };

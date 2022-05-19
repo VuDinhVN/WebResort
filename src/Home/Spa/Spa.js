@@ -49,7 +49,7 @@ const Spa = () => {
                     backgroundOpacity: 0.2,
                     display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
                 }}>
-                    <div style={{ opacity: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, marginRight: '20%', marginLeft: '20%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', flex: 1, marginRight: '20%', marginLeft: '20%', backgroundColor: 'rgba(53,51,49,0.5)', }}>
                         <span style={{ paddingBottom: 10, color: 'white', fontSize: 20, fontWeight: 'bold' }}>Tận hưởng bữa ăn tại Mekong Riverside Boutique Resort</span>
                         <span style={{ color: 'white', textAlign: 'center', paddingBottom: 10 }}>Nơi nghỉ này có khu vườn hữu cơ rộng 7 ha phục vụ nhà hàng Mekong Medley của khu nghỉ mát.
                             Thực đơn cung cấp một loạt các món ăn truyền thống của Việt Nam và Quốc tế.</span>

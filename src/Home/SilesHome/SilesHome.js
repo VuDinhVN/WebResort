@@ -86,7 +86,7 @@ export default class SlidesHome extends React.Component {
 
   render() {
     return (
-      <div style={{height: 300}} className="lp-slideshow">
+      <div  className="lp-slideshow">
         <div className="container">
           {this.props.input.map((image, index) => {
             return (
@@ -96,11 +96,7 @@ export default class SlidesHome extends React.Component {
                   this.state.slideIndex === index ? "active" : ""
                 }`}
               >
-                <div className="number-text">
-                  {`${index + 1} / ${this.props.input.length}`}
-                </div>
-                <img className="image" src={image.src} alt={image.caption} />
-                {/* <div className="caption-text">{image.caption}</div> */}
+                {/* <img className="image" src={image.src} alt={image.caption} /> */}
               </div>
             );
           })}

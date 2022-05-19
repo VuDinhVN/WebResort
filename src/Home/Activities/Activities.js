@@ -10,7 +10,7 @@ const Activities = ()=>{
     return (
         <div style={{display: 'flex', width: '100%', flexDirection: 'column', backgroundColor: '#F9F9F9', paddingTop: 20, paddingBottom: 20}}>
             <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column', paddingBottom: 30}}>
-                <span style={{fontSize: 24, fontWeight: 'bold', color: 'green'}}>Hoạt Động</span>
+                <span style={{fontSize: 24, fontWeight: 'bold', color: '#2d6331'}}>Hoạt Động</span>
             </div>
             <div style={{ display: 'flex', paddingLeft: '10%', paddingRight: '10%'}}>
                 <div style={{flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>

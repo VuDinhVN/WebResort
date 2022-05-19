@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const AppFooter = () => {
     return (
-        <div style={{ width: '100%', backgroundColor: 'green', }}>
+        <div style={{ width: '100%', backgroundColor: '#2d6331', }}>
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', flex: 1, marginLeft: '15%', marginRight: '10%', paddingBottom: 50, paddingTop:50 }}>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', marginRight: 20 }}>
                     <span style={{fontSize: 17, fontWeight: 'bold', color: 'white', marginBottom: 16}}>Liên hệ chúng tôi</span>
