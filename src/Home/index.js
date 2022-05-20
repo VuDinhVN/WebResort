@@ -33,7 +33,7 @@ const Home = (props) => {
 
 	useEffect(() => {
 		if(mess){
-			setTimeout(() => setMess(), 2000);
+			setTimeout(() => setMess(), 3000);
 		}
 	}, [mess])
 	
