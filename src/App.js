@@ -17,11 +17,13 @@ import Booking from './Rooms/Booking'
 import Restaurants from './Restaurants/Restaurants'
 import Activities from './Activities/Activities'
 import AboutUs from './AboutUs/AboutUs'
+import Scroll from './Scroll'
 
 
 const App =()=>{
   return (
-   <Router>
+   <Router> 
+     <Scroll/>
     <Routes>
       <Route exact path="/" element={<Home/>}/>
         <Route exact path="/DeluxeDoubleRiverviewBungalow" element={<Rooms />} />
