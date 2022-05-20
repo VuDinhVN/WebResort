@@ -11,53 +11,45 @@ const Activities = ()=>{
     return (
         <div style={{ display: 'flex', width: '100%', flexDirection: 'column', backgroundColor: '#F9F9F9', paddingTop: 20, paddingBottom: 20}}>
             <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', paddingBottom: 30}}>
-                <span className = "font"  style={{ fontSize: 24, fontWeight: 'bold', color: '#2d6331'}}>Hoạt Động</span>
+                <span className = "font"  style={{ fontSize: 24, fontWeight: 'bold', color: '#2d6331', marginTop: 10}}>ACTIVITIES</span>
             </div>
             <div style={{  display: 'flex', paddingLeft: '10%', paddingRight: '10%'}}>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' , marginBottom: 30, marginTop: 10}}>
                     <img src={a1} alt="" style={{  width: 100, height: 100 }} />
                     <div style={{  display: 'flex', flexDirection: 'column', flex: 1}}>
-                        <span className = "font"  style={{ fontSize:18, fontWeight: '500'}}>Đi xe đạp</span>
-                        <span className = "font"  styles={{  }}>Khám phá Đồng bằng sông Cửu Long với việc đạp xe trên những con đường quanh co yên tĩnh và băng qua những con kênh.</span>
+                        <span className = "font"  style={{ fontSize:18, fontWeight: '500'}}>Biking</span>
+                        <span className = "font"  styles={{  }}>Discovery of Mekong Delta with cycling on its tranquil winding lanes and crossing canals.</span>
                     </div>
                 </div>
                 <div style={{  flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                     <img src={a2} alt="" style={{  width: 100, height: 100, }} />
                     <div style={{  display: 'flex', flexDirection: 'column' }}>
                         <span className = "font"  style={{  fontSize: 18, fontWeight: '500' }}>
-                            Chèo thuyền</span>
-                        <span className = "font"  styles={{  }}>Hãy thả phao trên sông Mekong và quan sát phong cách sống nổi của người dân địa phương. </span>
+                            
+Boating</span>
+                        <span className = "font"  styles={{  }}>Let felling buoyancy in the Mekong river and observe the floating life style of local people.  </span>
                     </div>
                 </div>
 
             </div>
             <div style={{  display: 'flex', paddingLeft: '10%', paddingRight: '10%' }}>
-                <div style={{  flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{  flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 20 }}>
                     <img src={a3} alt="" style={{  width: 100, height: 100, }} />
                     <div style={{  display: 'flex', flexDirection: 'column' }}>
                         <span className = "font"  style={{  fontSize: 18, fontWeight: '500' }}>
-                            Lớp học nấu ăn</span>
-                        <span className = "font"  styles={{  }}>Hướng dẫn bạn cách làm một số món ngon địa phương này để bạn có thể trải nghiệm hương vị và phong vị ẩm thực Việt Nam.</span>
+                        Cooking class</span>
+                        <span className = "font"  styles={{  }}>Instructing you how to make some of these local delicacies so you can experience the flavours and tastes of Vietnamese cuisine.</span>
                     </div>
                 </div>
                 <div style={{  flex: 1, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                     <img src={a4} alt="" style={{  width: 100, height: 100, }} />
                     <div style={{  display: 'flex', flexDirection: 'column' }}>
                         <span className = "font"  style={{  fontSize: 18, fontWeight: '500' }}>
-                            Mát xa</span>
-                        <span className = "font"  styles={{  }}>Để giúp bạn thực sự thư giãn, spa thanh bình của chúng tôi cung cấp dịch vụ mát-xa truyền thống, mang đến liệu pháp hoàn hảo sau một ngày khám phá dũng cảm.</span>
+                        Local Market</span>
+                        <span className = "font"  styles={{  }}>Do you want to enjoy the hectic feeling when entering a local market? For a long time, Cai Rang Local Market has been known as the trading center located next to Tien River so don’t overlook an essential part- markets. </span>
                     </div>
                 </div>
 
-            </div>
-            <div style={{  display: 'flex', paddingLeft: '10%', paddingRight: '50%' }}>
-                <div style={{  display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={a5} alt="" style={{  width: 100, height: 100, }} />
-                    <div style={{  display: 'flex', flexDirection: 'column' }}>
-                        <span className = "font"  style={{  fontSize: 18, fontWeight: '500' }}>Thị trường nội địa</span>
-                        <span className = "font"  styles={{  }}>Bạn có muốn tận hưởng cảm giác náo nhiệt khi bước vào một khu chợ địa phương không? Từ lâu, Chợ Cái Bè đã được biết đến là trung tâm buôn bán nằm cạnh sông Tiền nên đừng bỏ qua một chợ phụ thiết yếu.</span>
-                    </div>
-                </div>
             </div>
         </div>
     )

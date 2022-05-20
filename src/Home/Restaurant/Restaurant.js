@@ -6,7 +6,13 @@ import Box from '@mui/material/Box';
 import res2 from '../../Icon/res2.jpg'
 import bak from '../../Icon/bak.jpeg'
 import cls from '../../Icon/cls.jpeg'
+import { useNavigate } from 'react-router-dom';
 const Restaurant = () => {
+    const navigate = useNavigate();
+
+    const goToRestaurants = ()=>{
+        navigate('/restaurants');
+    }
     return (
         <div style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', }}>
             <div style={{ }}>
@@ -36,11 +42,10 @@ const Restaurant = () => {
                     >
                         <img src={res2} alt="" style={{  width: 300, height: 300, overflow: 'hidden', }} />
                         <div style={{  display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center' }}>
-                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Nhà hàng</span>
+                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Restaurant</span>
                             <span className = "font"  style={{  textAlign: 'center' }}>
-                                Nhà hàng Mekong Medley trong khuôn viên của chúng tôi có sức chứa hơn 120 khách và phục vụ bữa sáng, bữa trưa và bữa tối tự chọn hàng ngày cũng như nhiều lựa chọn A La Carte khác nhau, từ Các món ăn truyền thống của Đồng bằng sông Cửu Long như Cá tai voi chiên cho đến Các món ăn phương Tây phong tục như Spaghetti Bolognese.
-Chúng tôi có hai quán bar tại khu nghỉ mát. Một nằm trong Nhà hàng Medley Mekong và một nằm cạnh hồ bơi.</span>  
-                          <button style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Thêm Thông Tin</button>
+                            Our onsite Mekong Medley Restaurant seats over 120 guests and offers a daily breakfast, lunch and dinner buffet as well a variety of A La Carte options varying from Traditional Mekong Delta Dishes such as Fried Elephant Ear Fish to Customary Western Dishes like Spaghetti Bolognese. We have two bars at the resort. One is located in the Mekong Medley Restaurant and the other is by the poolside.</span>  
+                          <button onClick={goToRestaurants} style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Read More</button>
                         </div>
 
                     </Paper>
@@ -58,9 +63,9 @@ Chúng tôi có hai quán bar tại khu nghỉ mát. Một nằm trong Nhà hàn
                     >
                         <img src={bak} alt="" style={{  width: 300, height: 300, overflow: 'hidden', }} />
                         <div style={{  display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center' }}>
-                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Cửa hàng bánh mì</span>
-                            <span className = "font"  style={{  textAlign: 'center' }}> Với danh mục đầu tư bao gồm hàng trăm loại bánh nướng khác nhau, nếu bạn đang tìm kiếm thứ gì đó cụ thể, vui lòng gửi email cho chúng tôi và chúng tôi rất tích cực rằng anh ấy có thể học hỏi hoặc đã biết cách làm món đó cho bạn.</span>
-                            <button style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Thêm Thông Tin</button>
+                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Bakery</span>
+                            <span className = "font"  style={{  textAlign: 'center' }}> Our Pastry Chef, Vu Dinh, studied at the French Bakery School in Hue Vietnam. His talent and practiced skill is only exceeded by his passion for learning something new. Previously, he’s worked as the Demi Chef for The Sofitel Plaza in Hanoi and at La Residence Resort in Hue. With a portfolio containing hundreds of different baked goods, if you’re looking for something specific feel free to send us an email and we’re positive he can learn, or already knows how, to make it for your arrival.</span>
+                            <button onClick={goToRestaurants} style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Read More</button>
                         </div>
                     </Paper>
                     <Paper
@@ -75,14 +80,14 @@ Chúng tôi có hai quán bar tại khu nghỉ mát. Một nằm trong Nhà hàn
                     >
                         <img src={cls} alt="" style={{  width: 300, height: 300, overflow: 'hidden', }} />
                         <div style={{  display: 'flex', flex: 1, flexDirection: 'column', alignItems: 'center' }}>
-                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Lớp học nấu ăn</span>
-                            <span className = "font"  style={{  textAlign: 'center' }}>Lớp học nấu ăn của chúng tôi là cơ hội tuyệt vời để học một số món ăn truyền thống của Việt Nam. Chúng tôi sử dụng tất cả các nguyên liệu tươi từ khu vườn của chúng tôi. Bạn có tùy chọn để tự mình đi và chọn chúng!
+                            <span className = "font"  style={{  fontSize: 17, fontWeight: 'bold', textAlign: 'center', marginBottom: 15, marginTop: 10 }}>Cooking Class</span>
+                            <span className = "font"  style={{  textAlign: 'center' }}>Our Cooking Class is a great opportunity to learn some traditional Vietnamese dishes. We utilize all the fresh ingredients from our garden. You have the option to go and pick them yourself!
 
-                                Thực đơn lớp học nấu ăn
-                                - Chả giò chả tôm
-                                - Gà nấu lá húng dừa với rượu gạo
-                                - Cơm kiểu Mê Kông</span>
-                            <button style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Thêm Thông Tin</button>
+                            Cooking Class Menu
+                            - Pork and Prawn Spring Rolls
+                            - Coconut Basil Chicken cooked with Rice Wine
+                            - Mekong Style Rice</span>
+                            <button onClick={goToRestaurants} style={{  marginTop: 10, marginBottom: 10, border: 'none', backgroundColor: '#2d6331', borderRadius: 20, padding: 10, color: 'white' }}>Read Moren</button>
                         </div>
                     </Paper>
 

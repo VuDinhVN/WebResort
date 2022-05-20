@@ -74,9 +74,9 @@ const Order = ({type}) => {
         }}>
             <div style={{ flex: 3, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 <span className = "font"  style={{ fontSize: 24,  color: '#2d6331' ,}} >
-                    Mekong Riverside Resort & Spa - Booking
+                    Mekong Resort & Spa 
                 </span>
-                <span className = "font"  style={{  color: '#2d6331', fontSize: 17, }}>A member of IndochinaTravel</span>
+                <span className = "font"  style={{  color: '#2d6331', fontSize: 14, }}>A member of IndochinaTravel</span>
 
                 <div style={{  display: 'flex', flexDirection: 'row', marginRight: 10,fontStyle: 'italic', }}>
                     <span className = "font"  style={{  color: '#2d6331'}} >

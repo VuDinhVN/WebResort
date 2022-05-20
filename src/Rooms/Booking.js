@@ -2,10 +2,11 @@ import React, { useRef, useState, useEffect } from 'react';
 import AppContainer from '../AppContainer/AppContainer';
 import AppFooter from '../AppFooter/AppFooter';
 import Header from '../Home/Header';
-import r4 from '../Icon/r4.jpg';
+import book from '../Icon/book.jpeg';
 import '../App.css';
 import { useLocation } from 'react-router-dom';
 import moment from 'moment';
+import { useNavigate } from 'react-router-dom';
 
 const country = [ 
     {name: 'Afghanistan', code: 'AF'}, 
@@ -256,6 +257,8 @@ const country = [
 
 const Booking = () => {
     const {state} = useLocation();
+    const navigate = useNavigate();
+
     const {au,
         ch,
         date,
@@ -267,6 +270,10 @@ const Booking = () => {
         const [adult, setAdult] = useState(au)
         const [children, setCh] = useState(ch)
         const [Infant, setInfant]= useState(ifa)
+
+        const [name, setName] = useState()
+        const [phone, setPhone] = useState()
+        const [email, setEmail] = useState()
    
         const onChange1 =(e)=>{
             const eDay = new Date(e.target.value)
@@ -278,11 +285,25 @@ const Booking = () => {
         const onChange2 =(e)=>{
             setDate2(moment(new Date(e.target.value)).format('YYYY-MM-DD'))
         }
+
+        const goToHome =()=>{
+           if(name && phone && email){
+            const mess = 'Booking information submitted successfully! We will contact you as soon as possible. Thank you very much!'
+            navigate('/', {
+                state: {
+                    mess
+                }
+            });
+           
+           } else{
+            alert('Please fill full infomation!')
+           }
+        }
     return (
         <AppContainer>
-            <Header/>
-            <div style={{  width: '100%', height: 300, marginTop: 80,}}>
-                <img src={r4} style={{ width: '100%', height:300}}></img>
+            <Header />
+            <div style={{  width: '100%', height: 400, marginTop: 80,}}>
+                <img src={book} style={{ width: '100%', height:400}}></img>
             </div>
         <div style={{ marginTop: 20, display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{  display: 'flex', flexDirection: 'column', width: '30 %', }}>
@@ -455,19 +476,19 @@ const Booking = () => {
                     <option value="volvo">Ms</option>
                     <option value="saab">Mrs</option>
                 </select>
-                <input type="text" placeholder="Full Name" style={{  height: 30, marginBottom: 5 }}></input>
+                <input type="text" placeholder="Full Name" style={{  height: 30, marginBottom: 5 }} value={name} onChange={e=> setName(e.target.value)}></input>
                 <select name="location" id="location" style={{  height: 35, marginBottom: 5 }}>
                   {country.map(e =>{ return (<option value={e.code}>{e.name}</option>)})}
                    
                 </select>
-                <input type="email" placeholder="Email" style={{  height: 30, marginBottom: 5 }}></input>
-                <input type="tel" placeholder="Phone" style={{  height: 30, marginBottom: 5 }}></input>
-                <textarea cols="40" rows="5" placeholder="Other requests for room & food ? What will you do after Mekong Lodge stay?"></textarea>
+                <input type="email" placeholder="Email" style={{  height: 30, marginBottom: 5 }} value={email} onChange={e=> setEmail(e.target.value)}></input>
+                <input type="tel" placeholder="Phone" style={{  height: 30, marginBottom: 5 }} value={phone} onChange={e=> setPhone(e.target.value)}></input>
+                <textarea cols="40" rows="5" placeholder="Other requests for room & food ? What will you do after Mekong Resort stay?"></textarea>
 
             <div style={{  width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: 10, marginTop: 10}}>
 
                         <div style={{  borderRadius: 5, display: 'flex', backgroundColor: '#2d6331', width: '70%', flexDirection: 'row', justifyContent: 'center', marginBottom: 20 }}>
-                            <button style={{  fontWeight: 'bold', border: 'none', background: 'none', cursor: 'pointer', padding: 10, color: 'white' }}>Send</button>
+                            <button onClick={goToHome} style={{  fontWeight: 'bold', border: 'none', background: 'none', cursor: 'pointer', padding: 10, color: 'white' }}>Send</button>
                         </div>
             </div>
             </div>

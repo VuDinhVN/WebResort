@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import '../App.css';
 import AppContainer from '../AppContainer/AppContainer';
@@ -14,6 +14,8 @@ import SimpleImageSlider from 'react-simple-image-slider';
 import ab from '../Icon/ab.jpg'
 import bk from '../Icon/bk.png'
 
+import { useLocation } from 'react-router-dom';
+
 const images = [
 	{ url: ab },
 	{ url: bk },
@@ -21,13 +23,30 @@ const images = [
 ];
 
 const Home = (props) => {
+	const {state} = useLocation()
+	const [mess, setMess] = useState()
+	useEffect(() => {
+		if(state?.mess){
+			setMess(state?.mess)
+		}
+	}, [state?.mess])
+
+	useEffect(() => {
+		if(mess){
+			setTimeout(() => setMess(), 2000);
+		}
+	}, [mess])
+	
+		
 	useEffect(() => {
 		document.title = 'Mekong Resort'
 	}, [])
 	return (
 		<AppContainer>
-			<Header />
-
+			<Header mess= {mess} />
+			{/* {mess && <div>
+				<span>{mess}</span>
+				</div>} */}
 			<div style={{  position: 'relative', textAlign: 'center', color: 'red', height: 450, marginTop: 59 }}>
 				<SimpleImageSlider
 					width={'100%'}
@@ -49,7 +68,7 @@ const Home = (props) => {
 
 			<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20}}>
 				<span className = "font"  style={{ display: 'flex', width: '80%', flexDirection: 'column', alignItems: 'center'}}>
-					Nestled along the bank of Tien River, Mekong Lodge is a charming eco-resort where design, comfort and nature are blended seamlessly together. Our lodge features 26 private bungalows (12 with pools), meticulously built to embody the local style of rural “garden cottage” surrounded by flowers and fruit trees. Right at the heart of Mekong Delta, Mekong Lodge offers a chance to explore one of the most beautiful areas in the region, which is still left untouched by modernization and development. Here, you can live not as a tourist but as a local with daily life going on around: vibrant river, fantastic floating market and quaint villages. Here, pristine tropical sun and nature are waiting for you all year round. Welcome to Mekong Lodge and see the real Vietnam that others miss!
+					Nestled along the bank of Can Tho River, Mekong Lodge is a charming eco-resort where design, comfort and nature are blended seamlessly together. Our lodge features 26 private bungalows (12 with pools), meticulously built to embody the local style of rural “garden cottage” surrounded by flowers and fruit trees. Right at the heart of Mekong Delta, Mekong Lodge offers a chance to explore one of the most beautiful areas in the region, which is still left untouched by modernization and development. Here, you can live not as a tourist but as a local with daily life going on around: vibrant river, fantastic floating market and quaint villages. Here, pristine tropical sun and nature are waiting for you all year round. Welcome to Mekong Resort and see the real Vietnam that others miss!
 				</span>
 			</div>
 

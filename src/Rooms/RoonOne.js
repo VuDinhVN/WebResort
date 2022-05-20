@@ -47,21 +47,21 @@ const RoomOne = () => {
 
                     <div style={{  display: 'flex', flexDirection: 'column', width: '100%' }}>
                         <span className = "font"  styles={{  }}>Address</span>
-                        <span className = "font"  styles={{  }}>Mekong Riverside Boutique Resort & Spa,
+                        <span className = "font"  style={{  }}>Mekong Resort & Spa,
                         </span>
-                        <span className = "font"  styles={{  }}>
-                            Hoa Qui Ward,
+                        <span className = "font"  style={{  }}>
+                        Phu Khanh Area,
+                        </span >
+                        <span className = "font"  style={{  }}>
+                        Phu Thu Ward,
                         </span>
-                        <span className = "font"  styles={{  }}>
-                            Hoa Khanh Subdistrict,
+                        <span className = "font"  style={{  }}>
+                        Cai Rang District,
                         </span>
-                        <span className = "font"  styles={{  }}>
-                            Cai Be District,
+                        <span className = "font"  style={{  }}>
+                        Can Tho City,
                         </span>
-                        <span className = "font"  styles={{  }}>
-                            Tien Giang Province,
-                        </span>
-                        <span className = "font"  styles={{  }}>
+                        <span className = "font"  style={{  }}>
 
 
 

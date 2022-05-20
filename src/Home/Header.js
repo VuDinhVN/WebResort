@@ -10,7 +10,7 @@ import  incondowngreen from '../Icon/incondowngreen.png'
 
 
 
-const Header = () => {
+const Header = ({mess}) => {
   const navigate = useNavigate();
 
   const menu = (
@@ -22,11 +22,6 @@ const Header = () => {
       <MenuItem key="3">Double Riverview Bungalow</MenuItem>
     </Menu>
   );
-  // navigate('/DeluxeDoubleRiverviewBungalow', {
-  //   state: {
-  //     key
-  //   }
-  // })
 
   function onSelect({ key }) {
     if (key == 1) navigate('/DeluxeDoubleRiverviewBungalow')
@@ -49,13 +44,9 @@ const Header = () => {
     navigate('/aboutus');
   }
 
-
-  function onVisibleChange(visible) {
-    navigate('/DeluxeDoubleRiverviewBungalow');
-  }
-
   return (
-    <div style={{  display: 'flex', flex: 1, position: 'fixed', width: '100%', height: 80, backgroundColor: 'white', top: 0, zIndex: 99 }} className="header">
+    <div style={{  display: 'flex', flex: 1, position: 'fixed', width: '100%', height: mess ? 90: 80, backgroundColor: 'white', top: 0, zIndex: 99 , flexDirection: 'column'}} className="header">
+      <div style={{width: '100%', display: 'flex', flexDirection: 'row',}}>
       <div style={{  flex: 2, display: 'flex', justifyContent: 'center' }}>
         <button onClick={goToHome} style={{ border: 'none', backgroundColor: 'white', cursor: 'pointer'}}> <img src={Logo} alt="" className="LogoImg" /></button>
       </div>
@@ -80,6 +71,12 @@ const Header = () => {
       <div style={{  flex: 1, alignItems: 'center', display: 'flex', justifyContent: 'space-between', width: '100%' }}>
         
       </div>
+      </div>
+      {mess && <div style={{width: '100%', display: 'flex', flexDirection: 'row', height: 20, alignItems: 'center', justifyContent: 'center'}} >
+        <div style={{width: '100%', backgroundColor: '#2d6331', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',}}>
+        <span style={{color: 'white'}}>{mess}</span>
+        </div>
+      </div>}
     </div>
   );
 };

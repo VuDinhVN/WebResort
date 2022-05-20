@@ -9,13 +9,13 @@ const AppFooter = () => {
                     <span className = "font"  style={{ fontSize: 17, fontWeight: 'bold', color: 'white', marginBottom: 16}}>Contact Us</span>
                     <span className = "font"  style={{ color: 'white', fontSize: 20, fontWeight: '500'}}>Mekong Resort & Spa,
                     </span>
-                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}>Hoa Qui Ward,
+                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}>Phu Khanh Area,
                        </span>
-                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}> Hoa Khanh Subdistrict,
+                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}> Phu Thu Ward,
                        </span>
-                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}> Cai Be District,
+                    <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}> Cai Rang District,
                         </span>
-                        <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}>Tien Giang Province,
+                        <span className = "font"  style={{  color: 'white', fontStyle: 'italic' }}>Can Tho City,
                       </span >
                         <span className = "font"  style={{  color: 'white', fontStyle: 'italic' ,marginBottom: 10 }}>  Vietnam</span>
                    <a className = "font"  style={{  color: 'white', fontStyle: 'italic' }} href="tel:+84336132135">Điện thoại: +84 336 132 135</a>
