@@ -43,7 +43,6 @@ const AppFooter = () => {
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: 10}}>
                 
                 <span className = "font"  style={{  color: 'white'}}>Copyright © Mekong Resort 2022</span>
-                <span className = "font"  style={{  color: 'white'}}> Mekong Resort - A member of IndochinaTravel</span>
             </div>
         </div>
     )

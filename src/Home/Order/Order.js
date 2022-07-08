@@ -76,7 +76,6 @@ const Order = ({type}) => {
                 <span className = "font"  style={{ fontSize: 24,  color: '#2d6331' ,}} >
                     Mekong Resort & Spa 
                 </span>
-                <span className = "font"  style={{  color: '#2d6331', fontSize: 14, }}>A member of IndochinaTravel</span>
 
                 <div style={{  display: 'flex', flexDirection: 'row', marginRight: 10,fontStyle: 'italic', }}>
                     <span className = "font"  style={{  color: '#2d6331'}} >
